@@ -1,0 +1,10 @@
+version: '3'
+services:
+  build:
+    build: .
+    volumes:
+     - ./fonts:/tmp/fonts
+    tty: true
+    stdin_open: true
+    privileged: true
+    #command: ["/tmp/make.sh"]
